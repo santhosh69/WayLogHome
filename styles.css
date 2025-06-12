@@ -1,0 +1,111 @@
+<style>
+:root {
+  --bg-light: #f8f9fa;
+  --text-light: #212529;
+  --bg-dark: #1e1e1e;
+  --text-dark: #f1f1f1;
+  --accent: #6c63ff;
+  --soft-pink: #ffeef1;
+  --soft-blue: #e3f2fd;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80")
+    center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-mode header::after {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.theme-switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.theme-switch input {
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  color: var(--accent);
+}
+
+header h1 {
+  font-family: "Fugaz One", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.25rem;
+  color: #f0f0f0;
+}
+
+.features,
+.screenshots,
+.download,
+.contact {
+  margin-top: 3rem;
+}
+
+.screenshot-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+</style>

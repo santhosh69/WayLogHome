@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WayLog – Travel Made Effortless</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="theme-switch">
+      <label> <input type="checkbox" id="themeToggle" /> 🌙 </label>
+    </div>
+
+    <header>
+      <h1>WayLog</h1>
+      <p><em>Travel Made Effortless</em></p>
+    </header>
+
+    <section class="intro">
+      <p>
+        Have you ever looked out the window during a journey and wondered,<br />
+        <strong>"What is this place?"</strong><br /><br />
+
+        Squinted at distant shop boards… hoping for a clue?<br />
+
+        Wished you knew the name of that breathtaking landscape passing by?
+      </p>
+      <p>
+        Have you ever wanted to retrace your steps,<br />
+        To revisit that charming café you stumbled upon,<br />
+        Or to find your way back to that serene spot by the river?
+      </p>
+      <p>
+        Have you ever wished you could share your travel routes with friends,<br />
+        So they too could experience the joy of discovery?
+      </p>
+      <p>
+        Have you ever felt lost in a new city,<br />
+        With no idea how to get back to your hotel or the nearest landmark?
+      </p>
+      <p>
+        Have you ever wanted to explore a new place without the fear of losing
+        your way,<br />
+        To wander freely, knowing you can always find your way back?
+      </p>
+      <p>
+        Have you ever wandered a little too far off the path,<br />
+        And wished for a trail to guide you back — safely and surely?
+      </p>
+      <p>
+        Have you ever wanted to share your beautiful route with a friend,<br />
+        So they too could enjoy that hidden gem?
+      </p>
+      <p>
+        Have you ever dreamed of a simple, intuitive app that could do all this
+        and more,<br />
+        An app that makes your travels effortless and enjoyable?
+      </p>
+
+      <p>
+        Introducing <strong>WayLog</strong> — the app that transforms your
+        travel experience.<br />
+        It’s not just an app; it’s your personal route logger. <br />your travel
+        companion who remembers every twist and turn.
+      </p>
+      <p>
+        With <strong>WayLog</strong>, you can explore new places with
+        confidence,<br />
+        and share your adventures with friends.<br />
+        It’s designed to make your journeys memorable and stress-free.
+      </p>
+      <p>
+        Whether you’re a seasoned traveler or just love exploring your own
+        city,<br />
+        <strong>WayLog</strong> is here to enhance your experience.<br />
+        It’s the perfect blend of simplicity and functionality, making it easy
+        for anyone to use.
+      </p>
+
+      <p>
+        ✨ No complex features.<br />
+        ✨ No overwhelming options.<br />
+        ✨ No fuss.<br />
+        ✨ It just works.
+      </p>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Shows your current location with place names</li>
+        <li>Records your entire route as you travel</li>
+        <li>Lets you retrace your path easily</li>
+        <li>Share routes with friends</li>
+        <li>Light & Dark mode</li>
+      </ul>
+    </section>
+
+    <section class="screenshots">
+      <h2>Screenshots</h2>
+      <img
+        src="assets/screenshots/sample.jpg"
+        alt="App screenshot"
+        class="screenshot-img"
+      />
+    </section>
+
+    <section class="download">
+      <h2>Download</h2>
+      <a href="#" class="btn">Download APK</a>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:support@waylog.app">support@waylog.app</a></p>
+    </section>
+
+    <script>
+      const toggle = document.getElementById("themeToggle");
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode", toggle.checked);
+      });
+    </script>
+  </body>
+</html>
